@@ -43,3 +43,12 @@ function successResponse(res, message, data, status = 200) {
         error: null,
     })
 }
+
+function errorResponse(res, message, error, status = 500) {
+    return res.status(status).json({
+        success: false,
+        message,
+        data: null,
+        error: details,
+    })
+}
