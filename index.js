@@ -59,3 +59,7 @@ const biodataschema = Joi.object({
     nim: Joi.string().trim().min(5).max(20).required(),
     kelas: Joi.string().trim().min(1).max(20).required(),
 })
+
+const idSchema = Joi.object({
+    id: Joi.number().integer().positive().required(),
+})
