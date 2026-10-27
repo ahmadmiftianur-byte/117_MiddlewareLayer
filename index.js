@@ -63,3 +63,11 @@ const biodataschema = Joi.object({
 const idSchema = Joi.object({
     id: Joi.number().integer().positive().required(),
 })
+
+function validateBody(schema) {
+    // Isi fungsi validateBody dari kode kamu
+}
+
+function validateParams(schema) {
+    // Isi fungsi validateParams dari kode kamu
+}
